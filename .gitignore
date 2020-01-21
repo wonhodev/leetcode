@@ -1,0 +1,12 @@
+# Java
+*.class
+
+# JetBrains
+.idea/
+
+# IntelliJ
+out/
+*.iml
+
+# Maven
+target/
