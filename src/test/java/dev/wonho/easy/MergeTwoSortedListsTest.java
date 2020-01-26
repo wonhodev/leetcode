@@ -1,5 +1,8 @@
-package dev.wonho.easy.mtsl;
+package dev.wonho.easy;
 
+import dev.wonho.common.ListNode;
+import dev.wonho.common.SortedList;
+import dev.wonho.easy.MergeTwoSortedLists;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;

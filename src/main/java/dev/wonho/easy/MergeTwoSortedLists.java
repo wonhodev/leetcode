@@ -1,4 +1,6 @@
-package dev.wonho.easy.mtsl;
+package dev.wonho.easy;
+
+import dev.wonho.common.ListNode;
 
 /*
 21. Merge Two Sorted Lists

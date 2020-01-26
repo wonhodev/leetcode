@@ -1,4 +1,4 @@
-package dev.wonho.easy.mtsl;
+package dev.wonho.common;
 
 import org.junit.jupiter.api.Test;
 
