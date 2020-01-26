@@ -30,7 +30,7 @@ class ReverseIntegerTest {
         int num = 1534236469;
         assertThat(reverseInteger.reverse(num))
                 .as("Input: " + num + ", " + Integer.MAX_VALUE)
-                .isEqualTo(0);
+                .isZero();
     }
 
     @Test
@@ -39,7 +39,7 @@ class ReverseIntegerTest {
         int result = reverseInteger.reverse(num);
         assertThat(result)
                 .as("Input: " + num)
-                .isEqualTo(0);
+                .isZero();
     }
 
     @Test

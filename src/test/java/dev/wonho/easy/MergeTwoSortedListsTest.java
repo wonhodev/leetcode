@@ -2,7 +2,6 @@ package dev.wonho.easy;
 
 import dev.wonho.common.ListNode;
 import dev.wonho.common.SortedList;
-import dev.wonho.easy.MergeTwoSortedLists;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -47,7 +46,7 @@ class MergeTwoSortedListsTest {
 
         assertThat(SortedList.toString(mergeTwoSortedLists.mergeTwoLists(list1, list2)))
                 .as(list1 + " " + list2)
-                .isEqualTo(null);
+                .isNull();
 
         // Null
         list1 = SortedList.createList(1, 2, 4);

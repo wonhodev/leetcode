@@ -29,46 +29,46 @@ class RomanToIntegerTest {
     @Test
     void test_GreaterThan3999() {
         String input = "MMMMCMXCIV";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
     }
 
     @Test
     void test_EmptyInput() {
         String input = "";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
     }
 
     @Test
     void test_WrongInput() {
         String input = "IIII";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "XXXX";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "CCCC";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "DDDD";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "MMMM";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "VV";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "LL";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "DD";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "AAA";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
 
         input = "ABC";
-        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isEqualTo(0);
+        assertThat(romanToInteger.romanToInt(input)).as("Input: " + input).isZero();
     }
 
 }

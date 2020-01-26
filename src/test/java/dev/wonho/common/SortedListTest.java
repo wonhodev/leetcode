@@ -26,7 +26,7 @@ class SortedListTest {
     public void test_createList_Null() {
         assertThat(SortedList.createList(null))
                 .as("null")
-                .isEqualTo(null);
+                .isNull();
     }
 
     @Test
@@ -35,7 +35,7 @@ class SortedListTest {
 
         assertThat(SortedList.createList(input))
                 .as("{ }")
-                .isEqualTo(null);
+                .isNull();
     }
 
     @Test
@@ -52,7 +52,7 @@ class SortedListTest {
     public void test_toString_Null() {
         assertThat(SortedList.toString(null))
                 .as("null")
-                .isEqualTo(null);
+                .isNull();
     }
 
     @Test
@@ -60,10 +60,10 @@ class SortedListTest {
         int[] input = { };
         ListNode list = SortedList.createList(input);
 
-        assertThat(SortedList.toString(list)).as("{ }").isEqualTo(null);
+        assertThat(SortedList.toString(list)).as("{ }").isNull();
 
         list = SortedList.createList();
-        assertThat(SortedList.toString(list)).isEqualTo(null);
+        assertThat(SortedList.toString(list)).isNull();
     }
 
 }

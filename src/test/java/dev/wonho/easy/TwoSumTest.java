@@ -14,8 +14,7 @@ public class TwoSumTest {
         int target = 9;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(0);
-        assertThat(results[1]).isEqualTo(1);
+        assertThat(results).containsExactly(0, 1);
     }
 
     @Test
@@ -24,8 +23,7 @@ public class TwoSumTest {
         int target = 9;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(-1);
-        assertThat(results[1]).isEqualTo(-1);
+        assertThat(results).containsExactly(-1, -1);
     }
 
     @Test
@@ -34,8 +32,7 @@ public class TwoSumTest {
         int target = 9;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(-1);
-        assertThat(results[1]).isEqualTo(-1);
+        assertThat(results).containsExactly(-1, -1);
     }
 
     @Test
@@ -44,8 +41,7 @@ public class TwoSumTest {
         int target = 6;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(0);
-        assertThat(results[1]).isEqualTo(1);
+        assertThat(results).containsExactly(0, 1);
     }
 
     @Test
@@ -54,8 +50,7 @@ public class TwoSumTest {
         int target = 6;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(0);
-        assertThat(results[1]).isEqualTo(1);
+        assertThat(results).containsExactly(0, 1);
     }
 
     @Test
@@ -64,8 +59,7 @@ public class TwoSumTest {
         int target = 10;
         int[] results = twoSum.twoSum(nums, target);
 
-        assertThat(results[0]).isEqualTo(1);
-        assertThat(results[1]).isEqualTo(2);
+        assertThat(results).containsExactly(1, 2);
     }
 
 }
