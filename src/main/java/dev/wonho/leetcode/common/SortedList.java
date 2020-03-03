@@ -1,5 +1,9 @@
 package dev.wonho.leetcode.common;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class SortedList {
 
     public static ListNode createList(int... values) {
@@ -23,21 +27,24 @@ public class SortedList {
             return null;
         }
 
-        StringBuilder sb = new StringBuilder();
-        sb.append("[");
+        return Arrays.toString(toArray(head));
+    }
+
+    public static int[] toArray(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        List<Integer> list = new ArrayList<>();
 
         ListNode current = head;
-
         while (current.next != null) {
-            sb.append(current.val);
-            sb.append(", ");
-
+            list.add(current.val);
             current = current.next;
         }
-        sb.append(current.val);
-        sb.append("]");
+        list.add(current.val);
 
-        return sb.toString();
+        return list.stream().mapToInt(Integer::valueOf).toArray();
     }
 
 }
