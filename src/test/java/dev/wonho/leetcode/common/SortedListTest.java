@@ -66,4 +66,33 @@ class SortedListTest {
         assertThat(SortedList.toString(list)).isNull();
     }
 
+    @Test
+    public void test_toArray() {
+        int[] input = { 1, 2, 4 };
+        ListNode list = SortedList.createList(input);
+
+        int[] result = SortedList.toArray(list);
+
+        assertThat(Arrays.equals(input, result))
+                .as(Arrays.toString(input))
+                .isTrue();
+    }
+
+    @Test
+    public void test_toArray_Null() {
+        assertThat(SortedList.toArray(null))
+                .as("null")
+                .isNull();
+    }
+
+    @Test
+    public void test_toArray_Empty() {
+        int[] input = { };
+        ListNode list = SortedList.createList(input);
+
+        assertThat(SortedList.toArray(list)).as("{ }").isNull();
+
+        list = SortedList.createList();
+        assertThat(SortedList.toArray(list)).isNull();
+    }
 }
